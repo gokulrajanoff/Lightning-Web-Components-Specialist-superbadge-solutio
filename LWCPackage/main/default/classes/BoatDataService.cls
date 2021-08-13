@@ -5,7 +5,7 @@ public with sharing class BoatDataService {
     public static final String TYPE_TYPE = 'Type'; 
 	@AuraEnabled(cacheable=true)
     public static List<Boat__c> getBoats(String boatTypeId) {
-        // Without an explicit boatTypeId, the full list is desired
+        // Without an explicit boatTypeId, the full list is desired test
         String query = 'SELECT '
                      + 'Name, Description__c, Geolocation__Latitude__s, '
                      + 'Geolocation__Longitude__s, Picture__c, Contact__r.Name, '

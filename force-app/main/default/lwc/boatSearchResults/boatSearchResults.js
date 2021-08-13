@@ -63,14 +63,15 @@ export default class BoatSearchResults extends LightningElement {
   updateSelectedTile(event) {
 
     this.selectedBoatId = event.detail.boatId;
-    const payload = { selectedBoatId: this.selectedBoatId };
-    publish(this.messageContext, BOATMC, payload);
+    this.sendMessageService(this.selectedBoatId);
 
   }
 
   // Publishes the selected boat Id on the BoatMC.
   sendMessageService(boatId) {
     // explicitly pass boatId to the parameter recordId
+    const payload = { recordId: this.selectedBoatId };
+    publish(this.messageContext, BOATMC, payload);
   }
 
   // The handleSave method must save the changes in the Boat Editor
