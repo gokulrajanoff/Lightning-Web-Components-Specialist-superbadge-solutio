@@ -1,8 +1,8 @@
 <template>
-    <lightning-layout>
-      <lightning-layout-item class="slds-align-middle">
-        <lightning-combobox class="slds-align-middle"></lightning-combobox>
-      </lightning-layout-item>
-    </lightning-layout>
-  </template>
-  
+  <lightning-layout>
+    <lightning-layout-item class="slds-align-middle">
+      <lightning-combobox class="slds-align-middle" name="progress" label="Boat Type" value={selectedBoatTypeId}
+        options={searchOptions} onchange={handleSearchOptionChange}></lightning-combobox>
+    </lightning-layout-item>
+  </lightning-layout>
+</template>
