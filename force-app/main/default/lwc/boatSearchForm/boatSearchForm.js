@@ -1,5 +1,5 @@
 import { LightningElement, wire } from 'lwc';
-import boatTypes from '@salesforce/apex/BoatDataService.getBoatTypes';
+import getBoatTypes from '@salesforce/apex/BoatDataService.getBoatTypes';
 // imports
 // import getBoatTypes from the BoatDataService => getBoatTypes method';
 export default class BoatSearchForm extends LightningElement {
@@ -11,7 +11,7 @@ export default class BoatSearchForm extends LightningElement {
     searchOptions;
     
     // Wire a custom Apex method
-    @wire(boatTypes)
+    @wire(getBoatTypes )
     boatTypes({ error, data }) {
       if (data) {
         console.log(data);

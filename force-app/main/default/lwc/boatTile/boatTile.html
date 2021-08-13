@@ -3,16 +3,16 @@
       <div style={backgroundStyle} class="tile"></div>
       <div class="lower-third">
         <!-- Boat information goes here -->
-        <h1 class="slds-truncate slds-text-heading_medium">{boat.name}</h1>
-        <h2 class="slds-truncate slds-text-heading_small">{boat.owner.name}</h2>
+        <h1 class="slds-truncate slds-text-heading_medium">{boat.Name}</h1>
+        <h2 class="slds-truncate slds-text-heading_small">{boat.Contact__r.Name}</h2>
         <div class = "slds-text-body_small">
-          <lightning-formatted-number value={boat.Price} maximum-fraction-digits="2"></lightning-formatted-number>
+          Price: <lightning-formatted-number format-style="currency" currency-code="USD" value={boat.Price__c} maximum-fraction-digits="2"></lightning-formatted-number>
         </div>
         <div class = "slds-text-body_small">
-          {boat.length}
+          Length: {boat.Length__c}
         </div>
         <div class = "slds-text-body_small">
-          {boat.type}
+          Type: {boat.BoatType__r.Name}
         </div>
       </div>
     </div>

@@ -1,12 +1,12 @@
-import { LightningElement } from 'lwc';
-
+import { LightningElement ,api} from 'lwc';
+import getBoatsByLocation from '@salesforce/apex/BoatDataService.getBoatsByLocation';
 // imports
 const LABEL_YOU_ARE_HERE = 'You are here!';
 const ICON_STANDARD_USER = 'standard:user';
 const ERROR_TITLE = 'Error loading Boats Near Me';
 const ERROR_VARIANT = 'error';
 export default class BoatsNearMe extends LightningElement {
-  boatTypeId;
+  @api boatTypeId;
   mapMarkers = [];
   isLoading = true;
   isRendered;
