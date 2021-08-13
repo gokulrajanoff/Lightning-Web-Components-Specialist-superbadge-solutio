@@ -1,0 +1,38 @@
+<template>
+    <!-- div for when there are no reviews available -->
+    <div>No reviews available</div>
+    <!-- div for when there are reviews available -->
+    <div>
+    <!-- insert spinner -->
+      <ul class="slds-feed__list">
+        <!-- start iteration -->
+          <li class="slds-feed__item" key={boatReview.Id}>
+            <article class="slds-post">
+              <header class="slds-post__header slds-media">
+                <div class="slds-media__figure">
+                  <!-- display the creator’s picture -->
+                </div>
+                <div class="slds-media__body">
+                  <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                    <p>
+                        <!-- display creator’s name -->
+                      <span><!-- display creator’s company name --></span>
+                    </p>
+                  </div>
+                  <p class="slds-text-body_small">
+                    <!-- display created  date -->
+                  </p>
+                </div>
+              </header>
+              <div class="slds-text-longform">
+                <p class="slds-text-title_caps"><!-- display Name --></p>
+                <!-- display Comment__c -->
+              </div>
+              <!-- display five star rating on readonly mode -->
+            </article>
+          </li>
+        <!-- end iteration -->
+      </ul>
+    </div>
+  </template>
+  

@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title={getTitle} icon-name="custom:custom54">
+      <lightning-layout multiple-rows="true">
+        <template if:true={noBoats}>
+          <p class="slds-align_absolute-center">There are no related boats by {similarBy}!</p>
+        </template>
+        <!-- Loop through the list of similar boats -->
+        <template ...>
+          <!-- Responsive lightning-layout-item -->
+          <lightning-layout-item >
+            <!-- Each boat tile goes here -->
+          </lightning-layout-item>
+        </template>
+      </lightning-layout>
+    </lightning-card>
+  </template>
+  

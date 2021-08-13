@@ -1,0 +1,26 @@
+<template>
+    <lightning-tabset ...>
+      <lightning-tab label="Gallery">
+        <div class="slds-scrollable_y">
+          <!-- layout horizontally aligned to the center  -->
+          <!-- layout allowing multiple rows -->
+          <lightning-layout ...>
+            <!-- template looping through each boat -->
+            <template ...>
+              <!-- lightning-layout-item for each boat -->
+              <lightning-layout-item ...>
+                 <!-- Each BoatTile goes here -->
+              </lightning-layout-item>
+            </template>
+          </lightning-layout>
+        </div>
+      </lightning-tab>
+      <lightning-tab label="Boat Editor">
+        <!-- Scrollable div and lightning datatable go here -->
+      </lightning-tab>
+       <lightning-tab label="Boats Near Me">
+        <!-- boatsNearMe component goes here -->
+      </lightning-tab>
+    </lightning-tabset>
+  </template>
+  
