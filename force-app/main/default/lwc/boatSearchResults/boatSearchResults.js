@@ -35,10 +35,7 @@ export default class BoatSearchResults extends LightningElement {
   // wired getBoats method 
   @wire(getBoats, { boatTypeId: '$boatTypeId' })
   wiredBoats(result) {
-    this.wiredBoat = result;
-    if (this.wiredBoat.data) {
-      this.boats = this.wiredBoat.data;
-    }
+    this.boats = result;
     this.notifyLoading(false);
   }
 
@@ -54,8 +51,7 @@ export default class BoatSearchResults extends LightningElement {
   // this public function must refresh the boats asynchronously
   // uses notifyLoading
   async refresh() {
-
-    refreshApex(this.wiredBoat);
+    refreshApex(this.boats);
     this.notifyLoading(true);
   }
 

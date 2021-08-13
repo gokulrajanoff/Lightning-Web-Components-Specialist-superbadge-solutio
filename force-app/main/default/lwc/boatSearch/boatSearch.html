@@ -12,10 +12,10 @@
     </lightning-layout-item>
     <!-- Bottom -->
     <lightning-layout-item size="12" class="slds-p-top_small slds-is-relative">
-      <div if:true={isLoading} class="slds-is-relative">
+      <template if:true={isLoading} class="slds-is-relative">
         <lightning-spinner variant="brand" size="large" alternative-text="Loading" >
         </lightning-spinner>
-      </div>
+      </template>
       <c-boat-search-results onloading={handleLoading} ondoneloading={handleDoneLoading}></c-boat-search-results>
       <!-- boatSearchResults goes here -->
       <!-- onloading={handleLoading} ondoneloading={handleDoneLoading} -->
