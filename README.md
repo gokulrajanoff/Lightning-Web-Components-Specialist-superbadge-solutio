@@ -4,5 +4,5 @@
 2. sfdx force:source:deploy -p LWCPackage
 
 Go through this guide if your stuck inbetween
-#should be used only for reference
+# should be used only for reference
 
