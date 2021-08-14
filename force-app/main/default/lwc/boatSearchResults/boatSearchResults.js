@@ -97,6 +97,7 @@ export default class BoatSearchResults extends LightningElement {
           variant: ERROR_VARIANT,
         });
         this.dispatchEvent(evt);
+        this.notifyLoading(false);
       })
       .finally(() => {
         this.draftValues = [];
