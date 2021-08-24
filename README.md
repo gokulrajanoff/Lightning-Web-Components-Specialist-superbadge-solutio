@@ -1,19 +1,19 @@
 # Lightning Web Components Specialist Superbadge Complete solution 
 
 for Lightning Web Components and Salesforce Data : \
-sfdx force:data:record:create -s Contact -v "FirstName=Lisa LastName=Jones Email=ljones@developer.com"\
+sfdx force:data:record:create -s Contact -v "FirstName=Lisa LastName=Jones Email=ljones@developer.com"
 
 Instructions : \
-Package id :04t6g000008ateoAAA \
+Package id :04t6g000008ateoAAA
 
-First deploy messageChannels\
+First deploy messageChannels
 
-# to deploy in your playground org\
-1. sfdx force:source:deploy -p LWCPackage\
-2. sfdx force:source:deploy -p force-app\
+# to deploy in your playground org
+1. sfdx force:source:deploy -p LWCPackage
+2. sfdx force:source:deploy -p force-app
 
-Go through this guide if your stuck inbetween\
-# should be used only for reference\
+Go through this guide if your stuck inbetween
+# should be used only for reference
 
 Lightning Web Components Tests\
 Get Started with Testing\
