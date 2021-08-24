@@ -32,6 +32,23 @@
         <members>*</members>
         <name>StaticResource</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+    <members>*</members>
+    <name>HomePageLayout</name>
+</types>
+<types>
+    <members>*</members>
+    <name>CustomApplication</name>
+</types>
+<types>
+    <members>*</members>
+    <name>CustomTab</name>
+</types>
+
     <version>52.0</version>
 </Package>
 
