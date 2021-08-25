@@ -6,11 +6,8 @@ sfdx force:data:record:create -s Contact -v "FirstName=Lisa LastName=Jones Email
 Instructions : \
 Package id :04t6g000008ateoAAA
 
-First deploy messageChannels
-
 # to deploy in your playground org
-1. sfdx force:source:deploy -p LWCPackage
-2. sfdx force:source:deploy -p force-app
+npm run completesuperbadge
 
 Go through this guide if your stuck inbetween
 # should be used only for reference
